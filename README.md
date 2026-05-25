@@ -5,7 +5,7 @@
 **Course:** Pemrograman Kontroller  
 **Assignment:** Evaluasi Tengah Semester  
 **Lecturer:** Ahmad Radhy, S.Si., M.Si  
-**Class:** 4B  
+**Class:** 4C  
 
 **Group Members:**
 
