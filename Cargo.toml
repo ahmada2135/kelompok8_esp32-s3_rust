@@ -1,0 +1,29 @@
+[package]
+name = "kelompok8"
+version = "0.1.0"
+authors = ["kka"]
+edition = "2021"
+resolver = "2"
+rust-version = "1.82"
+
+[[bin]]
+name = "kelompok8"
+harness = false # do not use the built-in cargo test harness -> resolve rust-analyzer errors
+
+[profile.release]
+opt-level = "s"
+
+[profile.dev]
+debug = true    # Symbols are nice, and they don't increase the size on Flash
+opt-level = "z"
+
+[dependencies]
+esp-idf-svc = "0.50"
+esp-idf-hal = "0.45"
+esp-idf-sys = "0.36"
+anyhow = "1"
+esp-idf-dht = "0.1.3"
+log = "0.4"
+
+[build-dependencies]
+embuild = "0.33"
