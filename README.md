@@ -62,9 +62,9 @@ $$\overline{GAS} = \frac{1}{n}\sum_{i=1}^{n} GAS_i$$
 
 | Parameter | Kondisi NORMAL | Batas WASPADA | Batas BAHAYA | Rentang Valid Fisis |
 |---|---|---|---|---|
-| **Suhu (TEMP)** | $< 25.0^\circ\text{C}$ | $\ge 25.0^\circ\text{C}$ | $\ge 35.0^\circ\text{C}$ | $-20.0^\circ\text{C} \ \dots \ 80.0^\circ\text{C}$ |
-| **Kelembapan (HUM)** | $< 30.0\%$ | $\ge 30.0\%$ | $\ge 45.0\%$ | $0.0\% \ \dots \ 100.0\%$ |
-| **Kualitas Gas (GAS)** | $< 300.0\text{ PPM}$ | $\ge 300.0\text{ PPM}$ | $\ge 600.0\text{ PPM}$ | $0.0 \ \dots \ 1000.0\text{ PPM}$ |
+| **Suhu (TEMP)** | < 25.0 °C | >= 25.0 °C | >= 35.0 °C | -40.0 °C ... 80.0 °C |
+| **Kelembapan (HUM)** | < 30.0 % | >= 30.0 % | >= 45.0 % | 0.0 % ... 100.0 % |
+| **Kualitas Gas (GAS)** | < 300.0 PPM | >= 300.0 PPM | >= 600.0 PPM | 0.0 ... 1000.0 PPM |
 
 *   **Status Fault:** Jika pembacaan `NaN`, sensor terputus, atau data melompat keluar dari rentang valid fisis, sistem langsung mengaktifkan status **Fault** (Isolasi data rusak, LED Merah menyala, data tidak masuk buffer).
 
