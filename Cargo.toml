@@ -1,0 +1,29 @@
+[package]
+name = "kelompok8"
+version = "0.1.0"
+authors = ["kka"]
+edition = "2021"
+resolver = "2"
+rust-version = "1.82"
+
+[[bin]]
+name = "kelompok8"
+harness = false
+
+[profile.release]
+opt-level = "s"
+
+[profile.dev]
+debug = true
+opt-level = "z"
+
+[dependencies]
+esp-idf-svc = "0.50"
+esp-idf-hal = "0.45"
+esp-idf-sys = "0.36"
+anyhow = "1"
+dht-sensor = "0.2.1" # Library standar untuk membaca DHT22
+log = "0.4"
+
+[build-dependencies]
+embuild = "0.33"
