@@ -60,11 +60,11 @@ $$\overline{GAS} = \frac{1}{n}\sum_{i=1}^{n} GAS_i$$
 
 ## Logika Ambang Batas (Threshold)
 
-| Parameter | Batas WASPADA | Batas BAHAYA | Rentang Valid Fisis |
-|---|---|---|---|
-| **Suhu (TEMP)** | $\ge 25.0^\circ\text{C}$ | $\ge 35.0^\circ\text{C}$ | $-20.0^\circ\text{C} \ \dots \ 80.0^\circ\text{C}$ |
-| **Kelembapan (HUM)** | $\ge 30.0\%$ | $\ge 45.0\%$ | $0.0\% \ \dots \ 100.0\%$ |
-| **Kualitas Gas (GAS)** | $\ge 300.0\text{ PPM}$ | $\ge 600.0\text{ PPM}$ | $0.0 \ \dots \ 1000.0\text{ PPM}$ |
+| Parameter | Batas WASPADA | Batas BAHAYA |
+|---|---|---|
+| **Suhu (TEMP)** | $\ge 25.0^\circ\text{C}$ | $\ge 35.0^\circ\text{C}$ |
+| **Kelembapan (HUM)** | $\ge 30.0\%$ | $\ge 45.0\%$ |
+| **Kualitas Gas (GAS)** | $\ge 300.0\text{ PPM}$ | $\ge 600.0\text{ PPM}$ |
 
 *   **Status Fault:** Jika pembacaan `NaN`, sensor terputus, atau data melompat keluar dari rentang valid fisis, sistem langsung mengaktifkan status **Fault** (Isolasi data rusak, LED Merah menyala, data tidak masuk buffer).
 
