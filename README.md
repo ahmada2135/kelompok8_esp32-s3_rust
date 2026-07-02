@@ -26,9 +26,11 @@ Data yang diambil disaring secara *real-time* menggunakan *Static Circular Buffe
 ### 1. Pembacaan Sensor Digital DHT22
 Sensor DHT22 mentransmisikan data digital 40-bit biner melalui protokol *Single-Wire*. Nilai fisis suhu ($TEMP$) dan kelembapan ($HUM$) diekstrak dari gabungan data *high byte* dan *low byte* 16-bit yang kemudian dibagi dengan faktor skala 10:
 
-$$TEMP (^\circ\text{C}) = \frac{\text{Data 16-bit Suhu}}{10}$$
+* **Rumus Suhu:**
+  $$TEMP = \frac{\text{Data 16-bit Suhu}}{10}$$ *(dalam satuan  $^\circ$C)*
 
-$$HUM (\%) = \frac{\text{Data 16-bit Kelembapan}}{10}$$
+* **Rumus Kelembapan:**
+  $$HUM = \frac{\text{Data 16-bit Kelembapan}}{10}$$ *(dalam satuan %)*
 
 ### 2. Kalibrasi Sensor Analog MQ-2 (Pembagi Tegangan & Power-Law)
 Modul MQ-2 bekerja memanfaatkan prinsip rangkaian pembagi tegangan (*voltage divider*) dengan resistor beban internal ($R_L = 10\text{ k}\Omega$). Tegangan keluaran ($V_{out}$) dibaca oleh ADC 12-bit ($0 - 4095$) dengan rumus:
